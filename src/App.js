@@ -33,8 +33,12 @@ function App() {
 
   const changeHandler = (e) => {
     const re = /^\d*\.?\d*$/;
+    console.log(e.target);
     if (e.target.value === '' || re.test(e.target.value)) {
       setInput({ ...input, [e.target.name]: parseInt(e.target.value) });
+    }
+    if (isNaN(e.target.value)) {
+      setInput({ ...input, [e.target.name]: '' });
     }
   };
   const previousTip = document.querySelector('.clickedTip');
@@ -100,8 +104,15 @@ function App() {
                   />
                 );
               })}
-              <div className='tip custom'>Custom</div>
-              {/* <input type='text' className='tip custom' placeholder='Custom' /> */}
+              {/* <div className='tip custom'>Custom</div> */}
+              <input
+                type='text'
+                name='tip'
+                className='tip custom'
+                placeholder='Custom'
+                value={`${input.tip}`}
+                onChange={changeHandler}
+              />
             </div>
           </div>
           <div className='input-wrapper'>

@@ -1,5 +1,5 @@
 .tips {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 6.25rem 6.25rem 6.25rem;
   gap: 0.825rem 1rem;
 }

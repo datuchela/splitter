@@ -38,3 +38,13 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.dollar-icon {
+  width: 0.6875rem;
+  height: 1.0625rem;
+}
+
+.person-icon {
+  width: 0.8125rem;
+  height: 1rem;
+}

@@ -3,8 +3,7 @@ export default function PersonIcon() {
     <svg
       className='person-icon'
       xmlns='http://www.w3.org/2000/svg'
-      width='13'
-      height='16'
+      viewBox='0 0 13 16'
     >
       <path
         fill='#9EBBBD'
