@@ -1,0 +1,7 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1ch;
+  font-weight: 700;
+  color: hsl(186, 15%, 38%);
+}

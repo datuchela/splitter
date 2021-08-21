@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 3rem;
+  padding: 2.25rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 12px 0px hsl(186, 27%, 71%);
+  -webkit-box-shadow: 5px 5px 12px 0px hsl(186, 27%, 71%);
+  -moz-box-shadow: 5px 5px 12px 0px hsl(186, 27%, 71%);
+  background-color: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ---------------- left side ---------------------  */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-side {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+/* ----   endLeft   ---- */
+
+/* ----------------- right side -------------------*/
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 1.5rem;
+  height: 370px;
+  width: 350px;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: hsl(183, 100%, 15%);
+}
+
+.second-result {
+  flex: 1;
 }

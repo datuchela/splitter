@@ -1,0 +1,29 @@
+.result {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.left-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.primary-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.secondary-label {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: hsl(184, 14%, 56%);
+}
+
+.result-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+}

@@ -1,0 +1,48 @@
+.tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.875rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  /* --typography-- */
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.tip:hover {
+  background-color: hsl(183, 100%, 13%);
+}
+
+.custom {
+  outline: none;
+  border: none;
+  padding: 0.3rem 0.875rem;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  color: hsl(186, 14%, 43%);
+  background-color: hsl(189, 41%, 97%);
+  cursor: text;
+}
+
+.custom:hover {
+  background-color: hsl(180, 12%, 90%);
+}
+
+.tip:disabled {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.clickedTip {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+.clickedTip:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
